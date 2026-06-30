@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@layer base {
+    :root {
+        --ink:        #0c0f1a;
+        --ink-soft:   #1c2235;
+        --ink-muted:  #2e3550;
+        --gold:       #c49a3c;
+        --gold-pale:  #e2c06a;
+        --gold-line:  rgba(196, 154, 60, 0.22);
+        --gold-dim:   rgba(196, 154, 60, 0.10);
+        --cream:      #f7f2e9;
+        --parchment:  #ede5d4;
+        --parch-dark: #ddd0bb;
+        --smoke:      #7a7060;
+        --smoke-lt:   #a89f90;
+        --paper:      #faf7f2;
+        --teal:       #1a3a4a;
+    }
+
+    body {
+        font-family: 'Crimson Pro', Georgia, serif;
+        background-color: var(--paper);
+        color: var(--ink);
+        min-height: 100vh;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+.viaggio-navbar {
+    background: var(--ink);
+    border-bottom: 1px solid var(--gold-line);
+    min-height: 66px;
+}
+
+.viaggio-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--cream);
+    text-decoration: none;
+    letter-spacing: 0.3px;
+}
+
+.viaggio-brand:hover {
+    color: var(--gold-pale);
+}
+
+.nav-link-viaggio {
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(247, 242, 233, 0.65);
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: color 0.18s, background 0.18s;
+}
+
+.nav-link-viaggio:hover,
+.nav-link-viaggio.active {
+    color: var(--gold);
+    background: var(--gold-dim);
+}
+
+.btn-viaggio-gold {
+    background: var(--gold);
+    color: var(--ink);
+    border: none;
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background 0.18s, color 0.18s;
+}
+
+.btn-viaggio-gold:hover {
+    background: var(--gold-pale);
+    color: var(--ink);
+}
+
+.btn-viaggio-outline {
+    border: 1px solid var(--gold-line);
+    color: var(--gold);
+    background: transparent;
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 7px 20px;
+    border-radius: 4px;
+    transition: border-color 0.18s, color 0.18s, background 0.18s;
+}
+
+.btn-viaggio-outline:hover {
+    background: var(--gold-dim);
+    color: var(--gold-pale);
+    border-color: var(--gold-pale);
+}
+
+.viaggio-card {
+    background: var(--cream);
+    border: 1px solid var(--parch-dark);
+    border-radius: 8px;
+}
+
+.viaggio-table {
+    font-family: 'Crimson Pro', serif;
+    font-size: 16px;
+}
+
+.viaggio-table thead th {
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--smoke);
+    border-bottom: 1px solid var(--gold-line);
+    background: var(--cream);
+}
+
+.viaggio-table tbody tr {
+    border-bottom: 1px solid var(--parchment);
+}
+
+.viaggio-table tbody tr:hover {
+    background: var(--gold-dim);
+}
+
+.form-label-viaggio {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+}
+
+.form-control-viaggio {
+    border: 1px solid var(--parch-dark);
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Crimson Pro', serif;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 14px;
+    transition: border-color 0.18s;
+}
+
+.form-control-viaggio:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-dim);
+    background: var(--paper);
+    outline: none;
+    color: var(--ink);
+}
+
+.error-text {
+    color: #c0392b;
+    font-family: 'Crimson Pro', serif;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.page-title-viaggio {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--ink);
+    border-bottom: 1px solid var(--gold-line);
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+}
